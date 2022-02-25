@@ -1,0 +1,24 @@
+n=int(input())
+l=[]
+t=[]
+m=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+x=0
+for i in range(n):
+    if l[i]>0:
+        t.append(l[i])
+        x=x+1 
+for i in range(x,n):
+    if l[i]<0:
+        m.append(l[i])
+print(t,m)
+
+output:
+4
+1
+-4
+-4
+2
+[1,2,-4.-4]
